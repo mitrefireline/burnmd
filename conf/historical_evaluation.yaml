@@ -1,0 +1,241 @@
+simulator_initializer: get_historical_fire_error.get_simulator
+historical_fires_file: available_fires.json
+hist_layer_config:
+  # For a description of config parameters, go to
+  # https://fireline.pages.mitre.org/simfire/config.html
+  area:
+    screen_size: [128, 128]
+    pixel_scale: 50
+  
+  display:
+    fire_size: 1
+    control_line_size: 3
+    agent_size: 4
+    rescale_factor: 4
+  
+  simulation:
+    update_rate: 1
+    runtime: 15h
+    headless: false
+    draw_spread_graph: false
+    record: true
+    save_data: false
+    data_type: "npy"
+    sf_home: ${oc.env:HOME}/.simfire
+  
+  mitigation:
+    ros_attenuation: false
+  
+  operational:
+    seed:
+    latitude: 38.422 # top left corner
+    longitude: -118.266 # top left corner
+    height: 12_000 # in meters
+    width: 12_000 # in meters
+    resolution: 30 # in meters
+    year: 2020
+  
+  # FIXME: Not sure what "default" is for??
+  historical:
+    default: true
+    path: /simfire/data/historical
+    year: 2020
+    state: California
+    fire: Mineral
+    # state: Arizona
+    # fire: Gold
+    height: 3840
+    width: 3840
+  
+  terrain:
+    topography:
+      type: historical
+    fuel:
+      type: historical
+      # FIXME: Is "burn_probability" actually used?
+      burn_probability:
+        type: historical
+        functional:
+          function: perlin
+          perlin:
+            octaves: 3
+            persistence: 0.7
+            lacunarity: 2.0
+            seed: 827
+            range_min: 100.0
+            range_max: 300.0
+          gaussian:
+            amplitude: 500
+            mu_x: 50
+            mu_y: 50
+            sigma_x: 50
+            sigma_y: 50
+  
+  
+  fire:
+    fire_initial_position:
+      # NOTE: The historical start location will be used !!
+      type: historical
+      static:
+        position: (25, 25)
+    # We have below value set to 10 in simharness !!
+    # The simfire config value was set to 5 !!
+    max_fire_duration:  5
+    diagonal_spread: true
+  
+  environment:
+    moisture: 0.001
+  
+  wind:
+    # TODO: See how things change with "cfd" wind type.
+    function: simple
+    cfd:
+      time_to_train: 10000
+      result_accuracy: 10
+      iterations: 5
+      scale: 10
+      timestep_dt: 1.0
+      diffusion: 0.0
+      viscosity: 0.00001
+      speed: 1000.0
+      direction: north
+    simple:
+      speed: 5.5
+      direction: 0
+    perlin:
+      speed:
+        seed: 2345
+        scale: 1
+        octaves: 3
+        persistence: 0.5
+        lacunarity: 2.0
+        range_min: 1.8  
+        range_max: 1.85
+      direction:  
+        seed: 650
+        scale: 5
+        octaves: 5
+        persistence: 0.5
+        lacunarity: 2.0
+        range_min: 15.0
+        range_max: 17.0
+
+simulator_config:
+  # For a description of config parameters, go to
+  # https://fireline.pages.mitre.org/simfire/config.html
+  area:
+    screen_size: [128, 128]
+    pixel_scale: 50
+  
+  display:
+    fire_size: 1
+    control_line_size: 3
+    agent_size: 4
+    rescale_factor: 4
+  
+  simulation:
+    update_rate: 1
+    runtime: 15h
+    headless: false
+    draw_spread_graph: false
+    record: true
+    save_data: false
+    data_type: "npy"
+    sf_home: ${oc.env:HOME}/.simfire
+  
+  mitigation:
+    ros_attenuation: false
+  
+  operational:
+    seed:
+    latitude: 38.422 # top left corner
+    longitude: -118.266 # top left corner
+    height: 12_000 # in meters
+    width: 12_000 # in meters
+    resolution: 30 # in meters
+    year: 2020
+  
+  # FIXME: Not sure what "default" is for??
+  historical:
+    default: true
+    path: /simfire/data/historical
+    year: 2020
+    state: California
+    fire: Mineral
+    # state: Arizona
+    # fire: Gold
+    height: 3840
+    width: 3840
+  
+  terrain:
+    topography:
+      type: historical
+    fuel:
+      type: historical
+      # FIXME: Is "burn_probability" actually used?
+      burn_probability:
+        type: historical
+        functional:
+          function: perlin
+          perlin:
+            octaves: 3
+            persistence: 0.7
+            lacunarity: 2.0
+            seed: 827
+            range_min: 100.0
+            range_max: 300.0
+          gaussian:
+            amplitude: 500
+            mu_x: 50
+            mu_y: 50
+            sigma_x: 50
+            sigma_y: 50
+  
+  
+  fire:
+    fire_initial_position:
+      # NOTE: The historical start location will be used !!
+      type: historical
+      static:
+        position: (25, 25)
+    # We have below value set to 10 in simharness !!
+    # The simfire config value was set to 5 !!
+    max_fire_duration:  5
+    diagonal_spread: true
+  
+  environment:
+    moisture: 0.001
+  
+  wind:
+    # TODO: See how things change with "cfd" wind type.
+    function: simple
+    cfd:
+      time_to_train: 10000
+      result_accuracy: 10
+      iterations: 5
+      scale: 10
+      timestep_dt: 1.0
+      diffusion: 0.0
+      viscosity: 0.00001
+      speed: 1000.0
+      direction: north
+    simple:
+      speed: 5.5
+      direction: 0
+    perlin:
+      speed:
+        seed: 2345
+        scale: 1
+        octaves: 3
+        persistence: 0.5
+        lacunarity: 2.0
+        range_min: 1.8  
+        range_max: 1.85
+      direction:  
+        seed: 650
+        scale: 5
+        octaves: 5
+        persistence: 0.5
+        lacunarity: 2.0
+        range_min: 15.0
+        range_max: 17.0

@@ -1,0 +1,142 @@
+[
+    {
+        "state": "Washington",
+        "year": 2019,
+        "fire": "Williams_Flats"
+    },
+    {
+        "state": "California",
+        "year": 2020,
+        "fire": "Devil"
+    },
+    {
+        "state": "California",
+        "year": 2020,
+        "fire": "Hog"
+    },
+    {
+        "state": "California",
+        "year": 2020,
+        "fire": "Blue_Ridge"
+    },
+    {
+        "state": "California",
+        "year": 2020,
+        "fire": "Apple"
+    },
+    {
+        "state": "California",
+        "year": 2020,
+        "fire": "Silverado"
+    },
+    {
+        "state": "California",
+        "year": 2020,
+        "fire": "Loyalton"
+    },
+    {
+        "state": "California",
+        "year": 2020,
+        "fire": "Bond"
+    },
+    {
+        "state": "California",
+        "year": 2020,
+        "fire": "Mineral"
+    },
+    {
+        "state": "California",
+        "year": 2020,
+        "fire": "Sheep"
+    },
+    {
+        "state": "California",
+        "year": 2020,
+        "fire": "Lake"
+    },
+    {
+        "state": "California",
+        "year": 2020,
+        "fire": "Gold"
+    },
+    {
+        "state": "Oregon",
+        "year": 2019,
+        "fire": "204_Cow"
+    },
+    {
+        "state": "Nevada",
+        "year": 2020,
+        "fire": "Poodle"
+    },
+    {
+        "state": "Nevada",
+        "year": 2020,
+        "fire": "Big_Summit"
+    },
+    {
+        "state": "Nevada",
+        "year": 2020,
+        "fire": "Bishop"
+    },
+    {
+        "state": "Nevada",
+        "year": 2020,
+        "fire": "Meadow_Valley"
+    },
+    {
+        "state": "Idaho",
+        "year": 2020,
+        "fire": "Howe_Peak"
+    },
+    {
+        "state": "Idaho",
+        "year": 2020,
+        "fire": "Shissler"
+    },
+    {
+        "state": "Idaho",
+        "year": 2020,
+        "fire": "Buck"
+    },
+    {
+        "state": "New Mexico",
+        "year": 2019,
+        "fire": "Pine_Lodge"
+    },
+    {
+        "state": "Arizona",
+        "year": 2020,
+        "fire": "Wood_Springs_2"
+    },
+    {
+        "state": "Arizona",
+        "year": 2020,
+        "fire": "Basin"
+    },
+    {
+        "state": "Arizona",
+        "year": 2020,
+        "fire": "Griffin"
+    },
+    {
+        "state": "Arizona",
+        "year": 2019,
+        "fire": "Mountain"
+    },
+    {
+        "state": "Montana",
+        "year": 2020,
+        "fire": "Bear_Creek"
+    },
+    {
+        "state": "Colorado",
+        "year": 2020,
+        "fire": "Grizzly_Creek"
+    },
+    {
+        "state": "Colorado",
+        "year": 2019,
+        "fire": "Decker"
+    }
+]
