@@ -1,9 +1,9 @@
 import hydra
 from omegaconf import DictConfig, OmegaConf
-from simharness2.utils.historical_fire_utils import get_historical_error
+from burnmd.historical_fire_utils import get_historical_error
 from simfire.sim.simulation import FireSimulation
 from simfire.utils.config import Config
-from simharness2.utils.metrics import Metrics
+from burnmd.metrics import Metrics
 import imageio
 import numpy as np
 from hydra.utils import instantiate
