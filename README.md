@@ -10,9 +10,10 @@ This is a repository for hosting the BurnMD database. It contains the burnmd dat
 * Perimeter - outer edge of burned area
 ## Organization
 * BurnMD.zip - zip containing entire burnmd database
-* BurnMD\_cleaned.zip - zip containing cleaned burnmd database
-    - data has been cleaned to only fires that can successfully run with simfire (add citation?)
     - folders are stored as state-\>year of fire
+* available\_fires.json - json containing list of fires present in burnmd
+* available\_fires\_cleaned.json - json containing list of "cleaned" fires
+    - data has been cleaned to only fires that can successfully run with simfire 
 * scripts/ directory containing various evaluation scripts
 ## Installation
 * Install pyenv
@@ -43,7 +44,7 @@ poetry install
 * unzip database
 ```
 unzip BurnMD.zip
-unzip BurnMD\_cleaned.zip
+export BURNMD=\<path_to_dir\>/BurnMD/
 ```
 ## Examples
 * To run an example script, run the following:
