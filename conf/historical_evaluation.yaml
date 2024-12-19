@@ -38,7 +38,7 @@ hist_layer_config:
   # FIXME: Not sure what "default" is for??
   historical:
     default: true
-    path: /simfire/data/historical
+    path: ${oc.env:BURNMD}
     year: 2020
     state: California
     fire: Mineral
@@ -158,7 +158,7 @@ simulator_config:
   # FIXME: Not sure what "default" is for??
   historical:
     default: true
-    path: /simfire/data/historical
+    path: ${oc.env:BURNMD}
     year: 2020
     state: California
     fire: Mineral

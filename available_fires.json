@@ -1,10 +1,5 @@
 [
     {
-        "state": "Washington",
-        "year": 2019,
-        "fire": "Williams_Flats"
-    },
-    {
         "state": "California",
         "year": 2020,
         "fire": "Devil"
@@ -60,11 +55,6 @@
         "fire": "Gold"
     },
     {
-        "state": "Oregon",
-        "year": 2019,
-        "fire": "204_Cow"
-    },
-    {
         "state": "Nevada",
         "year": 2020,
         "fire": "Poodle"
@@ -100,11 +90,6 @@
         "fire": "Buck"
     },
     {
-        "state": "New Mexico",
-        "year": 2019,
-        "fire": "Pine_Lodge"
-    },
-    {
         "state": "Arizona",
         "year": 2020,
         "fire": "Wood_Springs_2"
@@ -120,11 +105,6 @@
         "fire": "Griffin"
     },
     {
-        "state": "Arizona",
-        "year": 2019,
-        "fire": "Mountain"
-    },
-    {
         "state": "Montana",
         "year": 2020,
         "fire": "Bear_Creek"
@@ -133,10 +113,5 @@
         "state": "Colorado",
         "year": 2020,
         "fire": "Grizzly_Creek"
-    },
-    {
-        "state": "Colorado",
-        "year": 2019,
-        "fire": "Decker"
     }
 ]
